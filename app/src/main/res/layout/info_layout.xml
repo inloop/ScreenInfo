@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="32dp"
+    android:layout_marginTop="132dp"
+    android:gravity="left|top"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:id="@id/sizelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/aspectlabel"
+        android:text="Size:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/aspect"
+        android:text="@string/size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/densitylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/aspectlabel"
+        android:layout_below="@id/sizelabel"
+        android:text="Density:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@id/density"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/aspect"
+        android:layout_alignTop="@id/densitylabel"
+        android:text="@string/density"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/densityNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/densitylabel"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/density"
+        android:textStyle="bold"
+        tools:text="(1.5)" />
+
+    <TextView
+        android:id="@id/orientationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/aspectlabel"
+        android:layout_below="@id/densitylabel"
+        android:text="Orientation:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@id/orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/aspect"
+        android:layout_alignTop="@id/orientationlabel"
+        android:text="@string/orientation"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/aspectlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationlabel"
+        android:text="Aspect Ratio:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@id/aspect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/aspectlabel"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/aspectlabel"
+        android:text="@string/aspect"
+        android:textStyle="bold" />
+
+</RelativeLayout>
