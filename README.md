@@ -10,7 +10,7 @@ This application:
 - show/hide action bar,
 - reacts to orientation changes.
 
-![Screenshot][3]
+![][3]
 
 ## Developed By
 
@@ -40,4 +40,4 @@ Google+ [https://plus.google.com/+MiroslavMichalec](https://plus.google.com/+Mir
 
 [1]: https://play.google.com/store/apps/details?id=com.cbsb.screenresolution
 [2]: http://developer.android.com/guide/practices/screens_support.html
-[3]: https://raw.github.com/ForestTree/ScreenInfo/blob/master/screenshot_demo1.png
+[3]: https://github.com/ForestTree/ScreenInfo/blob/master/screenshot_demo1.png
