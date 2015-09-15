@@ -48,8 +48,13 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+
         CheckBox toggleAB = (CheckBox) findViewById(R.id.toggleAB);
-        toggleAB.setChecked(true);
+        toggleAB.setChecked(false);
         toggleAB.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
