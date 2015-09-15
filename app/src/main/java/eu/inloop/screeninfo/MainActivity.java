@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         float density = getResources().getDisplayMetrics().density;
         TextView densityNumber = (TextView) findViewById(R.id.densityNumber);
-        densityNumber.setText("(" + Float.toString(density) + ")");
+        densityNumber.setText(getString(R.string.density_number, Float.toString(density)));
     }
 
     @Override
