@@ -50,9 +50,15 @@ public class WidthBox extends View {
 
         mPaint.setColor(Color.BLUE);
         canvas.drawRect(10 * mDensity, 10 * mDensity, 110 * mDensity, 110 * mDensity, mPaint);
+
+        canvas.drawRect(150 * mDensity, 10 * mDensity, (150 * mDensity) + 100, (10 * mDensity) + 100, mPaint);
+
         mPaint.setTextSize(12 * mDensity);
         mPaint.setColor(Color.WHITE);
         canvas.drawText("100 dp x 100 dp", 58 * mDensity, 65 * mDensity, mPaint);
+
+        mPaint.setColor(Color.BLACK);
+        canvas.drawText("100 px x 100 px", 150 * mDensity + 50, 30 * mDensity + 100, mPaint);
 
         mPaint.setTextSize(16 * mDensity);
         mPaint.setColor(Color.BLUE);
