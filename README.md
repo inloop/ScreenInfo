@@ -14,7 +14,7 @@ This application:
 
 ## Developed By
 
-Miroslav Michalec <michalec.miroslav@gmail.com> ([Inloop][4] team member)
+Miroslav Michalec <michalec@inloop.eu> ([Inloop][4] team member)
 
 Other developer apps on [Google Play Store](https://play.google.com/store/apps/developer?id=ForestTree) 
 
