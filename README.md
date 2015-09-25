@@ -14,7 +14,7 @@ This application:
 
 ## Developed By
 
-Miroslav Michalec <michalec.miroslav@gmail.com>
+Miroslav Michalec <michalec.miroslav@gmail.com> ([Inloop][4] team member)
 
 Other developer apps on [Google Play Store](https://play.google.com/store/apps/developer?id=ForestTree) 
 
@@ -41,3 +41,4 @@ Google+ [https://plus.google.com/+MiroslavMichalec](https://plus.google.com/+Mir
 [1]: https://play.google.com/store/apps/details?id=com.cbsb.screenresolution
 [2]: http://developer.android.com/guide/practices/screens_support.html
 [3]: https://github.com/ForestTree/ScreenInfo/blob/master/screenshot_demo1.png
+[4]: https://www.inloop.eu
