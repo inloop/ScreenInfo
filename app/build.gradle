@@ -1,4 +1,14 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'eu.inloop:easyrelease:0.2.2'
+    }
+}
+
 apply plugin: 'com.android.application'
+apply plugin: 'easyrelease'
 
 android {
     compileSdkVersion 23
@@ -9,7 +19,7 @@ android {
         minSdkVersion 10
         targetSdkVersion 23
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
     buildTypes {
         release {
