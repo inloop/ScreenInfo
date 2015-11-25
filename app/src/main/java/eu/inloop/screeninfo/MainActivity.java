@@ -27,11 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
         mVisible = true;
 
-        if (Build.VERSION.SDK_INT < 16) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        }
-        if (Build.VERSION.SDK_INT >= 16) {
+        } else {
             View decorView = getWindow().getDecorView();
             int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
             decorView.setSystemUiVisibility(uiOptions);
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         mContentView = findViewById(R.id.fullscreen_content);
 
-        if (Build.VERSION.SDK_INT > 10) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.GINGERBREAD_MR1) {
             mContentView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
-        if (Build.VERSION.SDK_INT > 10) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.GINGERBREAD_MR1) {
             delayedHide(200);
         }
     }
@@ -93,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void hide() {
         mVisible = false;
-
         mHideHandler.postDelayed(mHidePart2Runnable, UI_ANIMATION_DELAY);
     }
 
