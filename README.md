@@ -14,15 +14,11 @@ This application:
 
 ## Developed By
 
-Miroslav Michalec <michalec@inloop.eu> ([Inloop][4] team member)
+Miroslav Michalec <michalec@inloop.eu>
 
 [Inloop apps][5] on Google Play Store
 
 Inloop [Android tools & libs][6]
-
-Other developer apps on [Google Play Store](https://play.google.com/store/apps/developer?id=ForestTree) 
-
-Google+ [https://plus.google.com/+MiroslavMichalec](https://plus.google.com/+MiroslavMichalec)
 
 ## License
 
