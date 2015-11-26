@@ -22,7 +22,7 @@ Inloop [Android tools & libs][6]
 
 ## License
 
-    Copyright 2015 ForestTree
+    Copyright 2015 Inloop
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
