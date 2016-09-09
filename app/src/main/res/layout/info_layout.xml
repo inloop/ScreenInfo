@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="32dp"
-    android:layout_marginTop="132dp"
+    android:layout_marginLeft="@dimen/screen_margin_left"
+    android:layout_marginTop="@dimen/screen_margin_top"
     android:gravity="left|top"
     android:keepScreenOn="true">
 
@@ -22,6 +22,7 @@
         android:layout_alignLeft="@id/aspect"
         android:text="@string/size"
         android:textStyle="bold" />
+
 
     <TextView
         android:id="@id/densitylabel"
@@ -51,6 +52,7 @@
         android:textStyle="bold"
         tools:text="(1.5)" />
 
+
     <TextView
         android:id="@id/orientationlabel"
         android:layout_width="wrap_content"
@@ -69,6 +71,7 @@
         android:text="@string/orientation"
         android:textStyle="bold" />
 
+
     <TextView
         android:id="@id/aspectlabel"
         android:layout_width="wrap_content"
@@ -86,5 +89,63 @@
         android:layout_toRightOf="@id/aspectlabel"
         android:text="@string/aspect"
         android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/diagonalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aspectlabel"
+        android:layout_alignRight="@id/aspectlabel"
+        android:text="Diameter:"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/diagonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/diagonalLabel"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/diagonalLabel"
+        android:text="5"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/toggleAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diagonal"
+        android:layout_marginTop="14dp"
+        android:text="Action Bar" />
+
+
+    <TextView
+        android:id="@+id/text20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggleAB"
+        android:layout_marginTop="14dp"
+        android:textSize="20sp"
+        android:text="This is 20sp text."
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text20sp"
+        android:textSize="16sp"
+        android:text="This is 16sp text."
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text16sp"
+        android:textSize="12sp"
+        android:text="This is 12sp text."
+        android:textColor="@android:color/black" />
+
 
 </RelativeLayout>

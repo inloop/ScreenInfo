@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="@color/primary_background"
     tools:context=".MainActivity">
 
-    <eu.inloop.screeninfo.view.WidthBox
+    <eu.inloop.screeninfo.WidthBox
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -15,15 +15,47 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include layout="@layout/info_layout"/>
-
-        <CheckBox
-            android:id="@+id/toggleAB"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="12dp"
-            android:text="Action Bar" />
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/screen_margin_top"
+                android:layout_marginLeft="@dimen/screen_margin_left"
+                android:background="@color/greenSemitransparent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 dp"
+                    android:textColor="@color/primary_background"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginTop="@dimen/screen_margin_top"
+                android:layout_marginLeft="@dimen/screen_margin_left"
+                android:background="@color/greenSemitransparent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 px"
+                    android:textSize="@dimen/px_box_text_size"
+                    android:textColor="@color/primary_background"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/info_layout" />
+
     </LinearLayout>
 
 </FrameLayout>
