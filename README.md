@@ -8,7 +8,9 @@ This application:
 - displays size, density, orientation and aspect ratio screen characteristics (see [Supporting Multiple Screens][2]),
 - show/hide status bar and navigation bar by clicking to screen field,
 - show/hide action bar,
-- reacts to orientation changes.
+- reacts to orientation changes,
+- displays screen physical size in inches and centimeters.
+- displays 3 text sizes preview (20sp, 16sp, 12sp)
 
 ![][3]
 ![][7]
