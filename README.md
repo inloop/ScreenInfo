@@ -11,6 +11,8 @@ This application:
 - reacts to orientation changes.
 
 ![][3]
+![][7]
+![][8]
 
 ## Developed By
 
@@ -40,7 +42,9 @@ Inloop [Android tools & libs][6]
 
 [1]: https://play.google.com/store/apps/details?id=com.cbsb.screenresolution
 [2]: http://developer.android.com/guide/practices/screens_support.html
-[3]: https://github.com/ForestTree/ScreenInfo/blob/master/screenshot_demo1.png
+[3]: https://github.com/ForestTree/ScreenInfo/blob/master/ScreenInfo1.png
 [4]: https://www.inloop.eu
 [5]: https://play.google.com/store/apps/developer?id=Inloop,+s.r.o.
 [6]: https://inloop.github.io/
+[7]: https://github.com/ForestTree/ScreenInfo/blob/master/ScreenInfo2.png
+[8]: https://github.com/ForestTree/ScreenInfo/blob/master/ScreenInfo3.png
