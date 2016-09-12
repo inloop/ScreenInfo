@@ -117,10 +117,12 @@ public class WidthBox extends View {
         mWidthDp = (int) (w / mDensity);
         mHeightDp = (int) (h / mDensity);
 
-        DisplayMetrics dm = new DisplayMetrics();
-        ((Activity) getContext()).getWindowManager().getDefaultDisplay().getMetrics(dm);
-        mWidthInches = mWidth / dm.xdpi;
-        mHeightInches = mHeight / dm.ydpi;
-        mDiagonalInches = Math.sqrt(Math.pow(mWidthInches, 2) + Math.pow(mHeightInches, 2));
+        if (!isInEditMode()) {
+            DisplayMetrics dm = new DisplayMetrics();
+            ((Activity) getContext()).getWindowManager().getDefaultDisplay().getMetrics(dm);
+            mWidthInches = mWidth / dm.xdpi;
+            mHeightInches = mHeight / dm.ydpi;
+            mDiagonalInches = Math.sqrt(Math.pow(mWidthInches, 2) + Math.pow(mHeightInches, 2));
+        }
     }
 }

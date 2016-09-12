@@ -30,7 +30,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100 dp"
+                    android:text="100&#160;dp"
+                    android:maxLines="1"
                     android:textColor="@color/primary_background"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -46,8 +47,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100 px"
+                    android:text="100&#160;px"
                     android:textSize="@dimen/px_box_text_size"
+                    android:maxLines="1"
                     android:textColor="@color/primary_background"
                     android:textAlignment="center"
                     android:textStyle="bold" />
