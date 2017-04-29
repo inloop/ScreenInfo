@@ -2,25 +2,22 @@ buildscript {
     repositories {
         mavenCentral()
     }
-    dependencies {
-        classpath 'eu.inloop:easyrelease:0.2.2'
-    }
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'easyrelease'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
 
     defaultConfig {
         applicationId "eu.inloop.screeninfo"
         minSdkVersion 10
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -30,7 +27,7 @@ android {
 }
 
 ext {
-    supportLibVersion = "23.1.1"
+    supportLibVersion = "25.3.1"
 }
 
 dependencies {
