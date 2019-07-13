@@ -3,20 +3,18 @@ package eu.inloop.screeninfo;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.View;
-
-import eu.inloop.screeninfo.MainActivity;
-import eu.inloop.screeninfo.R;
+import java.util.Locale;
 
 /**
  * Created by miroslavmichalec on 14/09/15.
  */
-public class WidthBox extends View {
+public class WidthBox
+        extends View {
 
     private static final String AXIS_TEXT_FORMAT = "%dpx (%ddp)  ~ %.1f\" (%.1fcm)";
 
@@ -30,7 +28,6 @@ public class WidthBox extends View {
 
     private float mWidthInches;
     private float mHeightInches;
-    private double mDiagonalInches;
 
     private Paint mPaint;
 
@@ -64,7 +61,7 @@ public class WidthBox extends View {
         super.onDraw(canvas);
 
         mPaint.setColor(ContextCompat.getColor(getContext(), R.color.primary_dark));
-        mPaint.setStrokeWidth(1*mDensity);
+        mPaint.setStrokeWidth(1 * mDensity);
 
         mPaint.setTextSize(16 * mDensity);
 
@@ -83,29 +80,17 @@ public class WidthBox extends View {
         canvas.save();
         canvas.rotate(270, mWidth - (DIMEN_LINE_DESC_MARGIN * mDensity), mHeight / 2);
         canvas.drawText(
-                String.format(AXIS_TEXT_FORMAT, mHeight, mHeightDp, mHeightInches, mHeightInches * MainActivity.CM_PER_INCH),
+                String.format(Locale.getDefault(), AXIS_TEXT_FORMAT, mHeight, mHeightDp, mHeightInches, mHeightInches * MainActivity.CM_PER_INCH),
                 mWidth - (DIMEN_LINE_DESC_MARGIN * mDensity),
                 mHeight / 2,
                 mPaint);
         canvas.restore();
 
         canvas.drawText(
-                String.format(AXIS_TEXT_FORMAT, mWidth, mWidthDp, mWidthInches, mWidthInches * MainActivity.CM_PER_INCH),
+                String.format(Locale.getDefault(), AXIS_TEXT_FORMAT, mWidth, mWidthDp, mWidthInches, mWidthInches * MainActivity.CM_PER_INCH),
                 mWidth / 2,
                 mHeight - (DIMEN_LINE_DESC_MARGIN * mDensity),
                 mPaint);
-
-        //Diagonal
-//        canvas.drawLine(0, mHeight, mWidth, 0, mPaint);
-//        canvas.save();
-//        float angle = (float) Math.toDegrees(Math.atan2(-mHeight, mWidth));
-//        canvas.rotate(angle, mWidth / 2, mHeight / 2);
-//        canvas.drawText(
-//                String.format("%.1fin (%.1fcm)", mDiagonalInches, mDiagonalInches * MainActivity.CM_PER_INCH),
-//                mWidth / 2,
-//                mHeight / 2 + mPaint.getTextSize(),
-//                mPaint);
-//        canvas.restore();
     }
 
     @Override
@@ -122,7 +107,6 @@ public class WidthBox extends View {
             ((Activity) getContext()).getWindowManager().getDefaultDisplay().getMetrics(dm);
             mWidthInches = mWidth / dm.xdpi;
             mHeightInches = mHeight / dm.ydpi;
-            mDiagonalInches = Math.sqrt(Math.pow(mWidthInches, 2) + Math.pow(mHeightInches, 2));
         }
     }
 }

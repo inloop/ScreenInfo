@@ -7,13 +7,13 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "29.0.1"
 
     defaultConfig {
         applicationId "eu.inloop.screeninfo"
-        minSdkVersion 10
-        targetSdkVersion 25
+        minSdkVersion 17
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0.0"
     }
@@ -24,14 +24,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 ext {
-    supportLibVersion = "25.3.1"
+    supportLibVersion = "28.0.0"
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:support-v4:${supportLibVersion}"
-    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:support-v4:${supportLibVersion}"
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
 }

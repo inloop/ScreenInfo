@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item type="id" name="frame">false</item>
-    <item type="id" name="sizelabel">false</item>
-    <item type="id" name="aspectlabel">false</item>
-    <item type="id" name="size">false</item>
-    <item type="id" name="aspect">false</item>
-    <item type="id" name="densitylabel">false</item>
-    <item type="id" name="density">false</item>
-    <item type="id" name="densityNumber">false</item>
-    <item type="id" name="orientationlabel">false</item>
-    <item type="id" name="orientation">false</item>
+    <item name="frame" type="id" />
+    <item name="sizelabel" type="id" />
+    <item name="aspectlabel" type="id" />
+    <item name="size" type="id" />
+    <item name="aspect" type="id" />
+    <item name="densitylabel" type="id" />
+    <item name="density" type="id" />
+    <item name="densityNumber" type="id" />
+    <item name="orientationlabel" type="id" />
+    <item name="orientation" type="id" />
 </resources>
